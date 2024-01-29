@@ -1,0 +1,51 @@
+{
+  "title": "YouTube Data Retrieval", 
+  "selectGroup": {
+    "selectAll": "Select All",
+    "videoInfo": {
+      "title": "Title",
+      "viewCount": "View Count",
+      "uploader": "Uploader",
+      "releaseTime": "Release Time",
+      "lastUpdateTime": "Last Update Time",
+      "collectionCount": "Collection Count",
+      "likeCount": "Like Count",
+      "shareCount": "Share Count",
+      "commentCount": "Comment Count",
+      "totalInterCount": "Total Interaction Count",
+      "fetchDataTime": "Data Retrieval Time",
+      "errorTip": "Error Message"
+    }
+  },
+  "alerts": {
+    "selectNumberField": "Retrieve data such as title, likes, etc., based on YouTube video link",
+    "selectGroupFieldTip": "Plugin can automatically create selected fields. If mapping is needed, ensure the field names in the multi-dimensional table are consistent with the selection names. It is recommended to set the field type of 'Video Link', 'Title', 'Uploader', 'Blogger' as text, 'xx Count' as number, and 'xx Time' as date. 'Total Interaction Count' field can be used for multi-field calculation"
+  },
+  "labels": {
+    "link": "Link",
+    "cookie": "Cookie",
+    "xSCommon": "X-S-Common"
+  },
+  "checks": {
+    "number": "Type Check Failed: Type is not a number",
+    "text": "Type Check Failed: Type is not text",
+    "datetime": "Type Check Failed: Type is not a date",
+    "attachment": "Type Check Failed: Type is not an attachment"
+  },
+  "placeholder": {
+    "link": "Please select the field column corresponding to the video link",
+    "interCount": "Please select all the fields that need to be calculated",
+    "cookie": "Please enter the cookie as per the instruction manual",
+    "xSCommon": "Please enter X-S-Common as per the instruction manual"
+  },
+  "detailMode": "Enable Detailed Mode",
+  "submit": "Retrieve Data",
+  "helpTip": "For help guide, please check here 👉️",
+  "errorTip": {
+    "emptyNoteLink": "Incorrect article link address",
+    "errorLink": "Link format error, please refer to the instruction manual",
+    "errorLinkType": "Field type error, please set as text type",
+    "errorRequest": "Cookie error or request timeout"
+  },
+  "finishTip": "Data retrieval completed, number of failed requests:"
+}
