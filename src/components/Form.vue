@@ -133,22 +133,35 @@ const writeData = async () => {
   }
   isWritingData.value = true
 
-  // 获取字段数据Ids object类型，匹配已有的字段，创建缺少的字段
-  // @status {mappedFieldIds, isWritingData}  表示是命令性质的方法，改变mappedFieldIds对象的状态
-  await completeMappedFieldIdsValue()
-
-
   // 加载bitable实例
   const { tableId, viewId } = await bitable.base.getSelection();
   const table = await bitable.base.getActiveTable();
   const view = await table.getViewById(viewId);
 
+  // 错误判断：应当在主表中进行
+  if (table.id == historyTable.id) {
+    bitable.ui.showToast({
+      toastType: 'warning',
+      message: t('notAllowedInHistoryTable')
+    })
+    isWritingData.value = false
+    return
+  } 
+
+  // 获取字段数据Ids object类型，匹配已有的字段，创建缺少的字段
+  // @status {mappedFieldIds, isWritingData}  表示是命令性质的方法，改变mappedFieldIds对象的状态
+  await completeMappedFieldIdsValue()
+
+
+  
   // ## mode1: 全部记录
   const RecordList = await view.getVisibleRecordIdList()
 
   // ## model2: 交互式选择记录 
   // const RecordList = await bitable.ui.selectRecordIdList(tableId, viewId);
 
+
+  
 
 
   for (let recordId of RecordList) {

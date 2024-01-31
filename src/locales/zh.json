@@ -1,5 +1,6 @@
 {
   "title":"YouTube 数据获取", 
+  "notAllowedInHistoryTable": "不允许在历史记录表中使用插件，否则会覆盖历史数据",
   "selectGroup": {
     "selectAll": "全选",
     "videoInfo": {
