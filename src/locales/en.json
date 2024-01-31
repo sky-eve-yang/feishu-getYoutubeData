@@ -19,7 +19,7 @@
   },
   "alerts": {
     "selectNumberField": "Retrieve data such as title, likes, etc., based on YouTube video link",
-    "selectGroupFieldTip": "Plugin can automatically create selected fields. If mapping is needed, ensure the field names in the multi-dimensional table are consistent with the selection names. It is recommended to set the field type of 'Video Link', 'Title', 'Uploader', 'Blogger' as text, 'xx Count' as number, and 'xx Time' as date. 'Total Interaction Count' field can be used for multi-field calculation"
+    "selectGroupFieldTip": "Plugin can automatically create selected fields. If mapping is needed, ensure the field names in the multi-dimensional table are consistent with the selection names. It is recommended to set the field type of 'Video Link', 'Title', 'Uploader' as text, 'xx Count' as number, and 'xx Time' as date. 'Total Interaction Count' field can be used for multi-field calculation"
   },
   "labels": {
     "link": "Link",
